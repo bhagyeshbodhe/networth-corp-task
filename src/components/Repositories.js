@@ -11,7 +11,6 @@ import { useSelector } from "react-redux";
 
 const Repositories = () => {
   const { repositories } = useSelector((store) => store.users);
-
   const [expanded, setExpanded] = React.useState(false);
 
   const handleChange = (panel) => (event, isExpanded) => {

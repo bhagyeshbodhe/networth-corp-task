@@ -27,7 +27,7 @@ const usersSlice = createSlice({
       state.searchedUser = { ...payload };
     },
     setRepositories(state, { payload }) {
-      state.repositories = [...state.repositories, ...payload];
+      state.repositories = [...payload];
     },
     setUserLoading(state, { payload }) {
       state.userloading = payload;
